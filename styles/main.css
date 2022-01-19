@@ -29,7 +29,7 @@ h2 {
 
 h3 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.01em;
   color: #515151;
@@ -73,7 +73,13 @@ p {
   @media only screen and (max-width: 576px) {
     .frame-text-wrapper,
     .frame-image-wrapper {
-      width: 100%; } }
+      width: 100%;
+      text-align: center; }
+      .frame-text-wrapper img,
+      .frame-image-wrapper img {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .frame-1 {
   background-image: url("../images/background/lg/Frame 1.png"); }
@@ -125,7 +131,29 @@ p {
       width: 130px;
       height: auto; }
     .card-wrapper .card-1 .card-text {
-      font-size: 27px;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: 0.03em;
+      color: #000000; }
+    .card-wrapper .card-1 .value-title {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 110%;
+      letter-spacing: 0.01em; }
+    .card-wrapper .card-1 .value-price {
+      font-weight: 900;
+      font-size: 33px;
+      line-height: 110%;
+      letter-spacing: 0.03em; }
+      .card-wrapper .card-1 .value-price:before {
+        content: 'a partir de';
+        font-size: 10px;
+        display: block;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: normal; }
+    .card-wrapper .card-1 .value-text {
+      font-size: 18px;
       line-height: 120%;
       letter-spacing: 0.03em;
       color: #000000; }
@@ -137,8 +165,8 @@ p {
         flex-direction: row;
         width: 300px;
         height: 145px;
-        padding: 30px 25px;
-        margin-bottom: 50px; }
+        padding: 20px 25px;
+        margin-bottom: 20px; }
         .card-wrapper .card-1 img {
           width: 60px;
           margin-right: 20px; }

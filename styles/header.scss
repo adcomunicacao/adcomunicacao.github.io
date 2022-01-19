@@ -21,6 +21,7 @@ header.navbar{
 	top: 0;
 	height: $header-height;
 	z-index: 10;
+	backdrop-filter: blur(70px);
 	
 	width: 100%;
 	// max-width: 1564px;
@@ -56,7 +57,8 @@ header.navbar{
 			left: 0px;
 			width: 100%;
 			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			background-color: #EFF5FA;
+			// background-color: #EFF5FA;
+			backdrop-filter: blur(50px);
 		}
 
 		.navbar-nav li{
