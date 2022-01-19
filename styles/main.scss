@@ -6,11 +6,68 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
+$header-height: 132px;
+$header-height-sm: 100px;
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    background: linear-gradient(124.09deg, #783A96 5.82%, #4E729E 92.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    @media only screen and (max-width: $breakpoint-sm){
+        font-size: 19px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+}
+p{
+    font-size: 24px;
+    line-height: 150%;
+    color: #4B4B4B;
+    letter-spacing: 0.01em;
+    @media only screen and (max-width: $breakpoint-sm){
+        font-size: 16px;
+        line-height: 150%;
+        // letter-spacing: 0.03em;
+    }
+}
+
 .inner{
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: $header-height;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $breakpoint-sm){
+		padding-top: $header-height-sm;
+	}
+}
+
+.container-default{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.frame-text-wrapper,
+.frame-image-wrapper{
+    width: 50%;
+    img{
+        max-width: 100%;
+    }
+    @media only screen and (max-width: $breakpoint-sm){
+        width: 100%;
+    }
 }
 
 .frame-1{
