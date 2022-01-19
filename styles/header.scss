@@ -1,0 +1,133 @@
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+
+$header-height: 132px;
+$header-height-sm: 100px;
+
+$header-a-color: #646464;
+$header-a-selected-color: #383838;
+$header-a-border-color: #BD68FF;
+
+$navbar-collapse-height: 167px;
+
+header.navbar{
+	position: fixed;
+	top: 0;
+	height: $header-height;
+	z-index: 10;
+	
+	width: 100%;
+	max-width: 1564px;
+	padding: 0px 10%;
+	border-bottom: 2px solid #F4F3FC;
+	@media only screen and (max-width: $breakpoint-sm){
+		height: $header-height-sm;
+		padding: 0px 5%;
+	}
+	// margin-left: auto;
+	// margin-right: auto;
+
+	.navbar-brand{
+		width:188px;
+		height: 68px;
+		padding: 0px;
+		@media only screen and (max-width: $breakpoint-sm){
+			width:105px;
+			height: 38px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+
+	}
+
+	.navbar-collapse{
+		justify-content: flex-end;
+		@media only screen and (max-width: $breakpoint-sm){
+			position: fixed;
+			top: $header-height-sm;
+			left: 0px;
+			width: 100%;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-color: #EFF5FA;
+		}
+
+		.navbar-nav li{
+			margin-left: 32px;
+			padding: 0px 5px;
+			font-size: 27px;
+			@media only screen and (max-width: $breakpoint-sm){
+				font-size: 18px;
+				padding: 10px 0px;
+				margin-left: 5%;
+			}
+			&.selected{
+				font-weight: 900;
+				@media only screen and (min-width: $breakpoint-lg){
+					border-radius: 10px;
+					box-shadow: 0 40px 0 0 $header-a-border-color;
+					height: 5px;
+				}
+				
+				a{
+					color: $header-a-selected-color;
+				}
+			}
+			// transition: all 0.5s;
+			a{
+				color: $header-a-color;
+				display: block;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&:hover{
+				@media only screen and (min-width: $breakpoint-lg){
+					border-radius: 10px;
+					box-shadow: 0 40px 0 0 $header-a-border-color;
+					height: 5px;
+					transition: all 0.5s;
+				}
+				
+				
+			}
+		}
+
+	}
+
+	.navbar-toggler{
+		width: 33px;
+		height: 32px;
+		border-radius: 50%;
+		padding: 0px;
+		background: linear-gradient(159.43deg, #9E3BD0 2.02%, rgba(60, 57, 208, 0.54) 97.85%);
+		text-align: center;
+		&:focus{
+			outline: none;
+		}
+
+		.icon-bar{
+			background-color: #ffffff;
+			height: 2px;
+			width: 14px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 50%;
+			
+			&.middle{
+				margin-top: 4px;
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+
+
+}

@@ -1,0 +1,37 @@
+.inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.frame-1 {
+  background-image: url("../images/background/lg/Frame 1.png"); }
+
+.frame-2 {
+  background-image: url("../images/background/lg/Frame 2.png"); }
+
+.frame-3 {
+  background-image: url("../images/background/lg/Frame 3.png"); }
+
+.frame-4 {
+  background-image: url("../images/background/lg/Frame 4.png"); }
+
+.docSlider-button {
+  width: 12px;
+  height: 12px;
+  background-color: #C4C4C4;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s; }
+  .docSlider-button.selected {
+    width: 20px;
+    height: 20px;
+    background-color: #753A96;
+    transition: all 0.5s; }
+  @media only screen and (max-width: 576px) {
+    .docSlider-button.selected {
+      width: 12px;
+      height: 12px; } }
+
+/*# sourceMappingURL=main.css.map */

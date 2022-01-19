@@ -1,0 +1,84 @@
+header.navbar {
+  position: fixed;
+  top: 0;
+  height: 132px;
+  z-index: 10;
+  width: 100%;
+  max-width: 1564px;
+  padding: 0px 10%;
+  border-bottom: 2px solid #F4F3FC; }
+  @media only screen and (max-width: 576px) {
+    header.navbar {
+      height: 100px;
+      padding: 0px 5%; } }
+  header.navbar .navbar-brand {
+    width: 188px;
+    height: 68px;
+    padding: 0px; }
+    @media only screen and (max-width: 576px) {
+      header.navbar .navbar-brand {
+        width: 105px;
+        height: 38px; } }
+    header.navbar .navbar-brand img {
+      max-width: 100%;
+      height: auto; }
+  header.navbar .navbar-collapse {
+    justify-content: flex-end; }
+    @media only screen and (max-width: 576px) {
+      header.navbar .navbar-collapse {
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #EFF5FA; } }
+    header.navbar .navbar-collapse .navbar-nav li {
+      margin-left: 32px;
+      padding: 0px 5px;
+      font-size: 27px; }
+      @media only screen and (max-width: 576px) {
+        header.navbar .navbar-collapse .navbar-nav li {
+          font-size: 18px;
+          padding: 10px 0px;
+          margin-left: 5%; } }
+      header.navbar .navbar-collapse .navbar-nav li.selected {
+        font-weight: 900; }
+        @media only screen and (min-width: 992px) {
+          header.navbar .navbar-collapse .navbar-nav li.selected {
+            border-radius: 10px;
+            box-shadow: 0 40px 0 0 #BD68FF;
+            height: 5px; } }
+        header.navbar .navbar-collapse .navbar-nav li.selected a {
+          color: #383838; }
+      header.navbar .navbar-collapse .navbar-nav li a {
+        color: #646464;
+        display: block; }
+        header.navbar .navbar-collapse .navbar-nav li a:hover {
+          text-decoration: none; }
+      @media only screen and (min-width: 992px) {
+        header.navbar .navbar-collapse .navbar-nav li:hover {
+          border-radius: 10px;
+          box-shadow: 0 40px 0 0 #BD68FF;
+          height: 5px;
+          transition: all 0.5s; } }
+  header.navbar .navbar-toggler {
+    width: 33px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0px;
+    background: linear-gradient(159.43deg, #9E3BD0 2.02%, rgba(60, 57, 208, 0.54) 97.85%);
+    text-align: center; }
+    header.navbar .navbar-toggler:focus {
+      outline: none; }
+    header.navbar .navbar-toggler .icon-bar {
+      background-color: #ffffff;
+      height: 2px;
+      width: 14px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%; }
+      header.navbar .navbar-toggler .icon-bar.middle {
+        margin-top: 4px;
+        margin-bottom: 4px; }
+
+/*# sourceMappingURL=header.css.map */
