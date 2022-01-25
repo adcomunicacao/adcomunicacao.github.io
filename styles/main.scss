@@ -86,7 +86,8 @@ p{
 .frame-image-wrapper{
     width: 50%;
     img{
-        max-width: 100%;
+        width: 100%;
+        max-width: 400px;
     }
     @media only screen and (max-width: $breakpoint-sm){
         width: 100%;
@@ -97,6 +98,9 @@ p{
             margin-right: auto;
         }
     }
+}
+.frame-image-wrapper{
+    text-align: center;
 }
 
 .frame-1{
