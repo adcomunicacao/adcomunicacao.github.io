@@ -1,0 +1,109 @@
+
+.instagram-card{
+    width:320px;
+    height: 470px;
+    background-color: #FFFFFF;
+    border-radius: 16px 22.5px;
+    padding: 10px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 6px 6px 23px -7px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 6px 6px 23px -7px rgba(0,0,0,0.57);
+    -moz-box-shadow: 6px 6px 23px -7px rgba(0,0,0,0.57);
+    > div{
+        width: 100%;
+    }
+
+    .header{
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .avatar{
+            display: flex;
+            .icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .username{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                justify-content: center;
+                color: #656566;
+                .user{
+                    font-size: 12px;
+                    line-height: 10px;
+                    font-weight: bold;
+                    margin-bottom: 4px;
+                }
+                .location{
+                    font-size: 11px;
+                    line-height: 11px;
+                }
+            }
+
+        }
+
+        .dots{
+            display: flex;
+            flex-direction: column;
+            height: 20px;
+            justify-content: space-evenly;
+            .dot{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: #656566;
+                
+            }
+        }
+    }
+
+    .image{
+        img{
+            max-width: 100%;
+        }
+        margin-bottom: 5px;
+    }
+
+    .interation{
+        margin-bottom: 5px;
+        img{
+            max-width: 18px;
+            margin-right: 10px;
+            &.save{
+                float: right;
+                margin-right: 0px;
+            }
+        }
+    }
+    .text{
+        color: #656566;
+        font-size: 12px;
+        .views{
+            // font-size: 12px;
+        }
+        .subtitle{
+            // font-size: 12px;
+        }
+        .comments{
+            color: #A9AAAD;
+        }
+        .date{
+            color: #A9AAAD;
+            font-size: 10px;
+        }
+
+    }
+
+}

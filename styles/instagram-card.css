@@ -1,0 +1,74 @@
+.instagram-card {
+  width: 320px;
+  height: 470px;
+  background-color: #FFFFFF;
+  border-radius: 16px 22.5px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 23px -7px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 6px 6px 23px -7px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 6px 6px 23px -7px rgba(0, 0, 0, 0.57); }
+  .instagram-card > div {
+    width: 100%; }
+  .instagram-card .header {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; }
+    .instagram-card .header .avatar {
+      display: flex; }
+      .instagram-card .header .avatar .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; }
+        .instagram-card .header .avatar .icon img {
+          width: 100%; }
+      .instagram-card .header .avatar .username {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: center;
+        color: #656566; }
+        .instagram-card .header .avatar .username .user {
+          font-size: 12px;
+          line-height: 10px;
+          font-weight: bold;
+          margin-bottom: 4px; }
+        .instagram-card .header .avatar .username .location {
+          font-size: 11px;
+          line-height: 11px; }
+    .instagram-card .header .dots {
+      display: flex;
+      flex-direction: column;
+      height: 20px;
+      justify-content: space-evenly; }
+      .instagram-card .header .dots .dot {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #656566; }
+  .instagram-card .image {
+    margin-bottom: 5px; }
+    .instagram-card .image img {
+      max-width: 100%; }
+  .instagram-card .interation {
+    margin-bottom: 5px; }
+    .instagram-card .interation img {
+      max-width: 18px;
+      margin-right: 10px; }
+      .instagram-card .interation img.save {
+        float: right;
+        margin-right: 0px; }
+  .instagram-card .text {
+    color: #656566;
+    font-size: 12px; }
+    .instagram-card .text .comments {
+      color: #A9AAAD; }
+    .instagram-card .text .date {
+      color: #A9AAAD;
+      font-size: 10px; }
+
+/*# sourceMappingURL=instagram-card.css.map */

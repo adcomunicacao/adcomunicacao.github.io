@@ -122,6 +122,7 @@ p{
     background-image: url('../images/background/lg/Frame\ 4.png');
     .inner{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 
@@ -262,6 +263,37 @@ p{
     @media only screen and (max-width: $breakpoint-sm){
 		padding-top: $header-height-sm;
 	}
+}
+
+.card-2-wrapper{
+    display: flex;
+    justify-content: space-around;
+    max-height: 450px;
+    .card-2{
+        height: 100%;
+        img{
+            max-height: 100%;
+        }
+
+    }
+
+    @media only screen and (max-width: $breakpoint-sm){
+        max-height: 300px;
+        .card-2{
+            width: 100%;
+        }
+    }
+}
+
+.inner-footer{
+    height: 197px;
+    width: 100vw;
+    margin-top: 80px;
+    // margin-left: -10%;
+    background-color: #252A9D;
+    @media only screen and (max-width: $breakpoint-sm){
+        height: 140px;
+    }
 }
 
 footer{

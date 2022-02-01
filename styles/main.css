@@ -101,7 +101,8 @@ p {
 .frame-4 {
   background-image: url("../images/background/lg/Frame 4.png"); }
   .frame-4 .inner {
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: nowrap; }
 
 .docSlider-button {
   width: 12px;
@@ -208,6 +209,29 @@ p {
   @media only screen and (max-width: 576px) {
     .internal-page {
       padding-top: 100px; } }
+
+.card-2-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-height: 450px; }
+  .card-2-wrapper .card-2 {
+    height: 100%; }
+    .card-2-wrapper .card-2 img {
+      max-height: 100%; }
+  @media only screen and (max-width: 576px) {
+    .card-2-wrapper {
+      max-height: 300px; }
+      .card-2-wrapper .card-2 {
+        width: 100%; } }
+
+.inner-footer {
+  height: 197px;
+  width: 100vw;
+  margin-top: 80px;
+  background-color: #252A9D; }
+  @media only screen and (max-width: 576px) {
+    .inner-footer {
+      height: 140px; } }
 
 footer.default {
   background-image: url("../images/background/footer.png");
