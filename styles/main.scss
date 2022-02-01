@@ -268,7 +268,8 @@ p{
 .card-2-wrapper{
     display: flex;
     justify-content: space-around;
-    max-height: 450px;
+    // max-height: 450px;
+    width: 100%;
     .card-2{
         height: 100%;
         img{
